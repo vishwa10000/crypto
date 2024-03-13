@@ -1,0 +1,674 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+    font-family: 'Alegreya Sans SC', sans-serif;
+}
+body::-webkit-scrollbar{
+    display: none;
+  }
+.header{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    backdrop-filter: blur(7px) saturate(200%);
+    -webkit-backdrop-filter: blur(7px) saturate(200%);
+    background-color: rgba(17, 25, 40, 0.2);
+    padding: 20px;
+    z-index: 10;
+}
+.header-icon-head a{
+    font-family: 'Bungee Inline', sans-serif;
+    text-decoration: none;
+    color: gold;
+    font-size: 30px;
+}
+.header-icon-head a:hover{
+    color: lightskyblue;
+    transition: all 0.7s;
+}
+.lists ul{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    gap: 20px;
+}
+.lists ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    transition: all 0.3s;
+    padding: 20px 0px;
+}
+.lists ul li a:hover{
+    color: gold;
+    transition: all 0.3s;
+}
+.lists-list{
+    display: none;
+    transition: all 0.3s;
+}
+.lists-list ul li a:hover{
+    transition: all 0.3s;
+    color: gold;
+}
+.lists ul li:hover .lists-list{
+    display: block;
+    position: absolute;
+    top: 40px;
+    backdrop-filter: blur(7px) saturate(200%);
+    -webkit-backdrop-filter: blur(7px) saturate(200%);
+    background-color: rgba(17, 25, 40, 0.2);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+.lists ul li:hover .lists-list ul{
+    display: block;
+    margin: 10px;
+}
+.lists ul li:hover .lists-list ul li{
+    width: 150px;
+    padding: 10px;
+}
+.mob-lists{
+    position: fixed;
+    top: 75px;
+    backdrop-filter: blur(7px) saturate(200%);
+    -webkit-backdrop-filter: blur(7px) saturate(200%);
+    background-color: rgba(17, 25, 40, 0.2);
+    z-index: 1;
+    overflow-x: hidden;
+    width: 0%;
+    height: 100%;
+    transition: 0.3s;
+}
+.mob-lists ul{
+    position: relative;
+    list-style-type: none;
+    padding: 15px 0px 0px 0px;
+}
+
+.mob-lists ul li{
+    padding: 18px;
+}
+
+.mob-lists ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    transition: all 0.3s;
+    padding: 20px 0px;
+}
+
+.mob-lists ul li a:hover{
+    color: gold;
+    transition: all 0.3s;
+}
+
+.mob-lists-list{
+    display: none;
+    transition: all 0.3s;
+}
+
+.mob-lists-list ul li a:hover{
+    transition: all 0.3s;
+    color: gold;
+}
+
+.mob-lists ul li:hover .mob-lists-list{
+    display: block;
+    position: absolute;
+    top: 270px;
+    left: 120px;
+    backdrop-filter: blur(7px) saturate(200%);
+    -webkit-backdrop-filter: blur(7px) saturate(200%);
+    background-color: rgba(17, 25, 40, 0.2);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.mob-lists ul li:hover .mob-lists-list ul{
+    display: block;
+    /* margin: 10px; */
+}
+
+.mob-lists ul li:hover .mob-lists-list ul li{
+    width: 150px;
+    padding: 10px;
+}
+.header-button button{
+    padding: 15px;
+    width: 10rem;
+    border: none;
+    background: rgb(236,80,70);
+    background: linear-gradient(90deg, rgb(95, 70, 236) 0%, rgb(224, 71, 255) 100%);
+    border-radius: 30px;
+    font-size: 15px;
+    color: white;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.header-button button:hover{
+    transition: all 0.3s;
+    background: rgb(236,80,70);
+    background: linear-gradient(90deg, rgb(224, 71, 255) 0%, rgb(95, 70, 236) 100%);
+}
+.nav-button{
+    display: none;
+}
+.nav-button button{
+    background: none;
+    font-size: 25px;
+    border: none;
+    color: white;
+    padding: 15px;
+}
+.nav-button button:hover{
+    color: gold;
+    transition: 0.7s;
+}
+.Contact-main{
+    height: 100%;
+    width: 100%;
+    background: url(../cripto-gallery/blog-card7\ \(1\)-min.jpg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.Contact-content1{
+    height: 70vh;
+    width: 100%;
+    background-color: rgba(54, 54, 54, 0.61);
+    /* background-color: rgba(0, 0, 0, 0.726); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+.Contact-content1 p{
+    padding-top: 10px;
+    width: 40rem;
+    font-size: 20px;
+}
+.Advisory-Board{
+    height: 100%;
+    width: 100%;
+    background-color: #182C61;
+}
+.Advisory-Board-main{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    padding-top: 50px;
+}
+.Advisory-Board-cards{
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 25px;
+    padding: 120px;
+}
+.Advisory-Board-card1{
+    position: relative;
+   
+}
+
+.Advisory-img{
+    height: 317px;
+    width: 350px;
+    background-color: rgba(0, 0, 0, 0.486);
+    border-radius: 30px 30px 0px 0px;
+}
+.Advisory-img img{
+    height: auto;
+    width: auto;
+    margin-top: -50px;
+    margin-left: 40PX;
+    margin-right: 40px;
+   
+}
+.Advisory-Board-card-border{
+    position: relative;
+    height: 150px;
+    width: 350px;
+    /* z-index: 1; */
+    border-radius: 0px 0px 30px 30px;
+    background-color: rgb(24, 3, 39);
+    overflow: hidden;
+    /* text-align: center;
+    color: white;
+    font-size: 20px; */
+}
+.Advisory-Board-card-border h3{
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    padding-top: 20px;
+}
+.Advisory-Board-card-border p{
+    text-align: center;
+    color: burlywood;
+    font-size: 20px;
+    padding-top: 10px;
+}
+.Advisory-Board-card-border i{
+    position: absolute;
+    right: 10px;
+    bottom:-100px;
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.466);
+    background: transparent;
+}
+.Advisory-Board-card-border:hover{
+    background: linear-gradient(90deg, rgb(224, 71, 255) 0%, rgb(95, 70, 236) 100%);
+    color: white;
+    transition: 0.7s;
+}
+.Advisory-Board-card-border:hover i{
+    bottom: 0px;
+    transition: 0.7s;
+}
+.join-buy{
+    width: 100%;
+    height: 100%;
+    background: url(../cripto-gallery/blog-card7\ \(4\)-min.jpg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.join-buy-main{
+    background-color: rgba(54, 54, 54, 0.61);
+    /* background-color: rgba(0, 0, 0, 0.671); */
+    height: 100%;
+    padding: 60px;
+}
+
+.join-buy-content{
+    text-align: center;
+    font-size: 30px;
+    line-height: 80px;
+    color: white;
+}
+
+.join-buy-content h5{
+    letter-spacing: 5px;
+}
+
+.join-buy-content button{
+    padding: 10px;
+    width: 20rem;
+    font-size: 20px;
+    border: none;
+    background: linear-gradient(90deg, rgb(95, 70, 236) 0%, rgb(224, 71, 255) 100%);
+    color: white;
+    border-radius: 30px;
+}
+
+.join-buy-content button:hover{
+    background: linear-gradient(90deg, rgb(224, 71, 255) 0%, rgb(95, 70, 236) 100%);  
+    transition: 0.7s;
+}
+.team-members{
+    height: 100%;
+    width: 100%;
+    background-color: #182C61;
+    text-align: center;
+}
+.team-members h1{
+    padding: 50px 0px;
+    font-size: 50px;
+    color: white;
+}
+.team-members-cards{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    align-items: center;
+    padding: 50px;
+}
+.team-card1{
+    height: 300px;
+    width: 280px;
+    position: relative;
+    overflow: hidden !important;
+    transition: 0.7s;
+}
+.team-card1 img{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.team-card1-content{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    text-align: center;
+    background: linear-gradient(90deg, rgba(95, 70, 236, 0.801) 0%, rgba(224, 71, 255, 0.801) 100%);
+    position: absolute;
+    bottom: -100%;
+    overflow: hidden;
+    /* z-index: 1; */
+    left: 0;
+    padding-left: 0px;
+    transition: 0.7s;
+}
+.team-card1:hover .team-card1-content{
+    bottom: 0%;
+    /* border-radius: 50px; */
+    transition: 0.7s;
+}
+.team-card1-con{
+    font-size: 15px;
+    padding-top: 80px;
+    line-height: 40px;
+    color: white;
+}
+.team-card1-con h2{
+    font-size: 30px;
+}
+.team-card1-con a{
+    font-size: 20px;
+    padding: 40px 10px;
+}
+.team-card1-con a{
+    color: rgb(255, 214, 80);
+}
+.team-card1-con a:hover{
+    color: aqua;
+}
+.footer-main{
+    height: 100%;
+    background: url(../cripto-gallery/gridscape-backgrounds-NF6LAQJ.jpg);
+    width: 100%;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+.footer{
+    /* height: 120vh; */
+    /* width: 100%; */
+    padding: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-direction: column;
+    background-color: #182b61d3;
+}
+.footer-container{
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    gap: 40px;
+}
+.footer-content1{
+    /* padding: 0px 30px 0px 80px; */
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.footer-head h1{
+    font-size: 20px;
+    font-family: 'Bungee Inline', sans-serif;
+    color: gold;
+}
+.footer-icon ul{
+    padding-top: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 23px;
+    color: white;
+    list-style-type: none;
+}
+.footer-icon ul li:hover{
+    color: #f879b6;
+    transition: 0.7s;
+}
+.footer-content2 ul{
+    width: 150px;
+    list-style-type: none;
+    font-size: 20px;
+}
+.footer-content2 ul li a{
+    text-decoration: none;
+    color: white;
+}
+.footer-content2 ul li a:hover{
+    color: #f879b6;
+    transition: 0.7s;
+}
+.footer-input{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    /* padding-bottom: 20px; */
+    color: white;
+}
+.input{
+    padding: 10px;
+    width: 13rem;
+    background: rgba(0, 0, 0, 0.438);
+    border: none;
+    color: white;
+    border-radius: 30px;
+
+}
+input:focus{
+    outline: 0;
+}
+::placeholder{
+    color: white;
+}
+.footer-input button{
+    padding: 10px;
+    width: 5rem;
+    border: none;
+    color: white;
+    font-size: 15px;
+    border-radius: 30px 0px;
+    background: linear-gradient(90deg, rgb(95, 70, 236) 0%, rgb(224, 71, 255) 100%);
+    /* background: linear-gradient(); */
+}
+.footer-input button:hover{
+    background: linear-gradient(90deg, rgb(224, 71, 255) 0%, rgb(95, 70, 236) 100%);
+    transition: 0.7s;
+
+}
+.footer-last{
+    color: white;
+    font-size: 15px;
+    padding-top: 50px;
+}
+.footer-last a{
+    text-decoration: none;
+    color: mediumaquamarine;
+}
+@media (min-width:320px) and (max-width:480px) {
+    .header{
+        width: 100%;
+        padding: 15px;
+    }
+    .header-icon{
+        font-size: 35px;
+    }
+    .header-icon-head a{
+        font-size: 25px;
+    }
+    .lists ul {
+        display: none;
+    }
+    .nav-button{
+        display: block;
+    }
+    .Contact-content1 p {
+        display: none;
+    }
+    .header-button button {
+        display: none;
+    }
+    .Advisory-Board-cards{
+        flex-direction: column;
+    }
+    .team-members-cards{
+        flex-direction: column;
+    }
+    .Advisory-img{
+        width: 100%;
+        height: 100%;
+    }
+    .join-buy-content h5{
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+    .join-buy-content{
+        line-height: 50px;
+        font-size: 20px;
+    }
+    .Advisory-img img{
+        margin: 0;
+        height: 400px;
+        width: 300px;
+    }
+    .Advisory-Board-card-border{
+        width: 100%
+    }
+    .join-buy-content button{
+        width: 100%;
+    }
+    .footer-container {
+        flex-direction: column;
+    }
+    .inputs-main2 input{
+        width: 80%;
+    }
+    .footer-container{
+        flex-direction: column;
+        gap: 60px;
+    }
+    .footer-content1{
+        padding: 0px 30px 0px 0px;
+    }
+    .footer-last{
+        width: 13rem;
+        text-align: center;
+        padding: 20px;
+    }
+}
+@media (min-width:481px) and (max-width:768px) {
+    .header{
+        width: 100%;
+        padding: 15px;
+    }
+    .header-icon{
+        font-size: 35px;
+    }
+    .header-icon-head a{
+        font-size: 25px;
+    }
+    .lists ul {
+        display: none;
+    }
+    .nav-button{
+        display: block;
+    }
+    .Contact-content1 p {
+        display: none;
+    }
+    .header-button button {
+        display: none;
+    }
+    .Advisory-Board-cards{
+        flex-wrap: wrap;
+    }
+    .team-members-cards{
+        flex-wrap: wrap;
+    }
+    .Advisory-img{
+        width: 100%;
+        height: 100%;
+    }
+    .join-buy-content h5{
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+    .join-buy-content{
+        line-height: 50px;
+        font-size: 20px;
+    }
+    .Advisory-img img{
+        margin: 0;
+        height: 400px;
+        width: 300px;
+    }
+    .Advisory-Board-card-border{
+        width: 100%
+    }
+    .join-buy-content button{
+        width: 70%;
+    }
+    .footer-container {
+        flex-wrap: wrap;
+        gap: 60px;
+    }
+    .inputs-main2 input{
+        width: 80%;
+    }
+    .footer-content1{
+        padding: 0px 30px 0px 0px;
+    }
+    .footer-last{
+        width: 13rem;
+        text-align: center;
+        padding: 20px;
+    }
+}
+
+@media (min-width:769px) and (max-width:1024px) {
+    .header{
+        width: 100%;
+        padding: 15px;
+    }
+    .header-icon{
+        font-size: 35px;
+    }
+    .header-icon-head a{
+        font-size: 25px;
+    }
+    .nav-button{
+        display: none;
+    }
+    .Contact-content1 p {
+        display: none;
+    }
+    .Advisory-img{
+        width: 100%;
+        height: 100%;
+    }
+    .Advisory-img img{
+        margin: 0;
+        height: 400px;
+        width: 300px;
+    }
+    .Advisory-Board-card-border{
+        width: 100%
+    }
+}

@@ -1,0 +1,1274 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  scroll-behavior: smooth;
+  font-family: "Alegreya Sans SC", sans-serif;
+}
+body::-webkit-scrollbar{
+  display: none;
+}
+.header {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  backdrop-filter: blur(7px) saturate(200%);
+  -webkit-backdrop-filter: blur(7px) saturate(200%);
+  background-color: rgba(17, 25, 40, 0.2);
+  padding: 10px;
+  z-index: 10;
+}
+
+.header-icon-head a {
+  font-family: "Bungee Inline", sans-serif;
+  text-decoration: none;
+  color: gold;
+  font-size: 30px;
+}
+.header-icon-head a:hover {
+  color: lightskyblue;
+  transition: all 0.7s;
+}
+.lists ul {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  gap: 20px;
+}
+
+.lists ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  transition: all 0.3s;
+  padding: 20px 0px;
+}
+
+.lists ul li a:hover {
+  color: gold;
+  transition: all 0.3s;
+}
+
+.lists-list {
+  display: none;
+  transition: all 0.3s;
+}
+
+.lists-list ul li a:hover {
+  transition: all 0.3s;
+  color: gold;
+}
+
+.lists ul li:hover .lists-list {
+  display: block;
+  position: absolute;
+  top: 40px;
+  backdrop-filter: blur(7px) saturate(200%);
+  -webkit-backdrop-filter: blur(7px) saturate(200%);
+  background-color: rgba(17, 25, 40, 0.2);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.lists ul li:hover .lists-list ul {
+  display: block;
+  margin: 10px;
+}
+
+.lists ul li:hover .lists-list ul li {
+  width: 150px;
+  padding: 10px;
+}
+.mob-lists {
+  position: fixed;
+  top: 75px;
+  backdrop-filter: blur(7px) saturate(200%);
+  -webkit-backdrop-filter: blur(7px) saturate(200%);
+  background-color: rgba(17, 25, 40, 0.2);
+  z-index: 1;
+  overflow-x: hidden;
+  width: 0%;
+  height: 100%;
+  transition: 0.3s;
+}
+.mob-lists ul {
+  position: relative;
+  list-style-type: none;
+  padding: 15px 0px 0px 0px;
+}
+
+.mob-lists ul li {
+  padding: 18px;
+}
+
+.mob-lists ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  transition: all 0.3s;
+  padding: 20px 0px;
+}
+
+.mob-lists ul li a:hover {
+  color: gold;
+  transition: all 0.3s;
+}
+
+.mob-lists-list {
+  display: none;
+  transition: all 0.3s;
+}
+
+.mob-lists-list ul li a:hover {
+  transition: all 0.3s;
+  color: gold;
+}
+
+.mob-lists ul li:hover .mob-lists-list {
+  display: block;
+  position: absolute;
+  top: 270px;
+  left: 120px;
+  backdrop-filter: blur(7px) saturate(200%);
+  -webkit-backdrop-filter: blur(7px) saturate(200%);
+  background-color: rgba(17, 25, 40, 0.2);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.mob-lists ul li:hover .mob-lists-list ul {
+  display: block;
+  /* margin: 10px; */
+}
+
+.mob-lists ul li:hover .mob-lists-list ul li {
+  width: 150px;
+  padding: 10px;
+}
+
+.header-button button {
+  padding: 15px;
+  width: 10rem;
+  border: none;
+  background: rgb(236, 80, 70);
+  background: linear-gradient(
+    90deg,
+    rgb(95, 70, 236) 0%,
+    rgb(224, 71, 255) 100%
+  );
+  border-radius: 30px;
+  font-size: 15px;
+  color: white;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.header-button button:hover {
+  transition: all 0.3s;
+  background: rgb(236, 80, 70);
+  background: linear-gradient(
+    90deg,
+    rgb(224, 71, 255) 0%,
+    rgb(95, 70, 236) 100%
+  );
+}
+.nav-button {
+  display: none;
+}
+.nav-button button {
+  background: none;
+  font-size: 25px;
+  border: none;
+  color: white;
+  padding: 15px;
+}
+.nav-button button:hover {
+  color: gold;
+  transition: 0.7s;
+}
+.Home {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url(../cripto-gallery/banner-bg.jpg);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* position: relative; */
+}
+.Home-main {
+  height: 100%;
+  padding: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #182b61b6;
+  /* background-color: rgba(54, 54, 54, 0.61); */
+}
+.Home-content {
+  color: white;
+  padding: 50px;
+}
+.Home-img img {
+  width: 670px;
+  height: 500px;
+  padding-top: 60px;
+}
+.Home-content h1 {
+  font-size: 50px;
+  padding-bottom: 20px;
+}
+
+.Home-content h5 {
+  font-size: 25px;
+  color: rgb(46, 185, 185);
+}
+
+.Home-content-p {
+  font-size: 20px;
+  padding-top: 25px;
+}
+
+.button-main {
+  padding-top: 20px;
+}
+
+.Home-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding-top: 20px;
+}
+
+.button1 button {
+  padding: 15px;
+  background: rgb(236, 80, 70);
+  background: linear-gradient(
+    90deg,
+    rgb(95, 70, 236) 0%,
+    rgb(224, 71, 255) 100%
+  );
+  border: none;
+  width: 15rem;
+  border-radius: 30px;
+  font-size: 15px;
+  color: white;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.button1 button:hover {
+  transition: all 0.3s;
+  background: rgb(236, 80, 70);
+  background: linear-gradient(
+    90deg,
+    rgb(224, 71, 255) 0%,
+    rgb(95, 70, 236) 100%
+  );
+}
+
+.Home-button2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-size: 20px;
+}
+
+.button2 {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background: rgb(147, 70, 236);
+  background: linear-gradient(
+    90deg,
+    rgb(95, 70, 236) 0%,
+    rgb(224, 71, 255) 100%
+  );
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  color: white;
+  border-radius: 100px;
+  animation: 2.5s pulse infinite linear;
+  border: none;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(147, 70, 236, 7), 0 0 0 0 rgba(224, 71, 255, 7);
+    transform: scale(1);
+  }
+
+  25% {
+    box-shadow: 0 0 0 20px rgba(147, 70, 236, 0),
+      0 0 0 0px rgba(224, 71, 255, 7);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 0 0 20px rgba(147, 70, 236, 0),
+      0 0 0 0px rgba(224, 71, 255, 7);
+    transform: scale(1);
+  }
+
+  75% {
+    box-shadow: 0 0 0 20px rgba(147, 70, 236, 0),
+      0 0 0 10px rgba(224, 71, 255, 0);
+    transform: scale(1);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(147, 70, 236, 0), 0 0 0 10px rgba(224, 71, 255, 0);
+    transform: scale(1);
+  }
+}
+
+/* section2 */
+.contact-help {
+  height: 100%;
+  width: 100%;
+  background-color: #182c61;
+}
+.help-main {
+  height: 100%;
+  padding: 50px;
+  font-size: 25px;
+}
+.help-main h1 {
+  padding: 30px 0px;
+  letter-spacing: 8px;
+  text-align: center;
+  color: white;
+}
+.support-main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  padding: 50px 0px;
+}
+.support {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.support-text {
+  width: 19rem;
+  color: white;
+}
+.support-text p {
+  padding-bottom: 10px;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.637);
+}
+.support-text h5 {
+  font-size: 25px;
+  padding-bottom: 10px;
+}
+.support-text a {
+  color: white;
+  padding-bottom: 10px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.ICO {
+  height: 100%;
+  width: 100%;
+  background: url(../cripto-gallery/parallex\ 1.jpg);
+}
+
+.parallex {
+  background-position: left 0 bottom 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.ICO-main {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(54, 54, 54, 0.61);
+  /* background-color: rgba(103, 32, 185, 0.541); */
+}
+
+.ICO-main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 40px 0px;
+}
+
+.ICO-img img {
+  height: 600px;
+  width: 600px;
+}
+
+.ICO-text h2 {
+  color: white;
+  font-size: 40px;
+  padding: 10px;
+}
+
+.ICO-text h5 {
+  color: springgreen;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.ICO-text-p {
+  font-size: 20px;
+  /* width: 34rem; */
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+.ICO-text-num {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  align-items: center;
+  font-size: 30px;
+  color: white;
+}
+
+.why-crypto {
+  height: 100%;
+  width: 100%;
+  background-color: #182c61;
+  color: white;
+  text-align: center;
+  font-size: 40px;
+}
+.why-crypto-head {
+  padding: 90px 0px;
+}
+.why-crypto-cards {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 40px;
+}
+.why-crypto-card1 {
+  display: flex;
+  /* justify-content: ; */
+  align-items: center;
+  gap: 20px;
+  /* padding: 20px; */
+}
+.why-crypto-card1-content {
+  font-size: 20px;
+  width: 20rem;
+}
+.why-crypto-card1-content h3 {
+  padding-bottom: 20px;
+}
+.road-code {
+  position: relative;
+}
+.timeline {
+  height: 100%;
+  width: 100%;
+  background-color: #182c61;
+}
+.timeline-main {
+  height: 100%;
+  padding: 60px;
+  /* text-align: center; */
+}
+.timeline-main p {
+  text-align: center;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.678);
+  padding: 20px 0px;
+}
+.timeline-head {
+  font-size: 35px;
+  color: white;
+  text-align: center;
+}
+.road-code-icon1 {
+  position: absolute;
+  /* left: -10px; */
+  top: 21.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15px;
+  width: 15px;
+  padding: 5px;
+  border-radius: 50%;
+  background-color: palegreen;
+}
+.timeline-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 40px;
+  padding-left: 150px;
+}
+.timeline-content {
+  height: 20rem;
+  width: 20rem;
+  padding: 30px;
+  /* background-color: blueviolet; */
+}
+.timeline-code-dash {
+  position: absolute;
+  top: 40px;
+  left: 12px;
+  height: 250px;
+  border-left: 2px dotted wheat;
+}
+.timeline-code {
+  padding-left: 30px;
+  padding-top: 100px;
+}
+.timeline-head-text {
+  /* padding-left: 30px; */
+  font-size: 25px;
+  color: white;
+}
+.timeline-head-text1 p {
+  text-align: left;
+  font-size: 18px;
+  color: #74aeda;
+}
+.timeline-head-text2 p {
+  font-size: 15px;
+  text-align: left;
+  color: white;
+}
+.road-code-icon2 {
+  position: absolute;
+  /* left: -10px; */
+  top: -43px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15px;
+  width: 15px;
+  padding: 5px;
+  border-radius: 50%;
+  background-color: palegreen;
+}
+.timeline-container1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* padding-top: 40px; */
+  padding-right: 110px;
+}
+.join-buy {
+  width: 100%;
+  height: 100%;
+  background-color: #182c61;
+}
+
+.join-buy-main {
+  padding: 60px;
+}
+
+.join-buy-content {
+  text-align: center;
+  font-size: 30px;
+  line-height: 80px;
+  color: white;
+}
+
+.join-buy-content h5 {
+  letter-spacing: 5px;
+}
+
+.join-buy-content button {
+  padding: 10px;
+  width: 20rem;
+  font-size: 20px;
+  border: none;
+  background: linear-gradient(
+    90deg,
+    rgb(95, 70, 236) 0%,
+    rgb(224, 71, 255) 100%
+  );
+  color: white;
+  border-radius: 30px;
+}
+
+.join-buy-content button:hover {
+  background: linear-gradient(
+    90deg,
+    rgb(224, 71, 255) 0%,
+    rgb(95, 70, 236) 100%
+  );
+  transition: 0.7s;
+}
+
+.clients {
+  height: 100%;
+  width: 100%;
+  background: url(../cripto-gallery/parallex\ 3.jpg);
+}
+
+.parallex3 {
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.clients-main {
+  height: 100%;
+  width: 100%;
+  padding: 120px 0px;
+  background-color: rgba(54, 54, 54, 0.61);
+  /* background-color: rgba(103, 32, 185, 0.753); */
+}
+
+.clients-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 50px;
+}
+
+.clients-content1 h3 {
+  width: 33rem;
+  color: white;
+  font-size: 35px;
+  letter-spacing: 5px;
+  padding-bottom: 40px;
+}
+
+.clients-content1 p {
+  width: 25rem;
+  color: white;
+  font-size: 20px;
+  padding-bottom: 40px;
+}
+
+.clients-content1 button {
+  padding: 10px;
+  width: 10rem;
+  font-size: 17px;
+  background: linear-gradient(
+    90deg,
+    rgb(95, 70, 236) 0%,
+    rgb(224, 71, 255) 100%
+  );
+  border-radius: 20px;
+  border: none;
+  letter-spacing: 2px;
+  color: white;
+}
+.flex {
+  position: relative;
+  height: 25rem;
+  width: 16rem;
+  /* padding: 30px; */
+  overflow: hidden;
+}
+.clients-con {
+  display: flex;
+  transition: transform 0.3s ease;
+  gap: 30px;
+}
+.clients-content2 {
+  /* background-color: white; */
+  transition: 0.3s;
+  height: 15rem;
+  width: 25rem;
+  padding: 30px;
+  border-radius: 30px;
+  /* border: 1px solid white; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  gap: 50px;
+}
+
+.clients-content2-text2 {
+  display: flex;
+  padding-top: 40px;
+  justify-content: first baseline;
+  align-items: center;
+  gap: 30px;
+}
+
+.clients-content2-text2 img {
+  border-radius: 40px;
+}
+
+.clients-about p {
+  font-size: 20px;
+  color: white;
+}
+
+.clients-about {
+  font-size: 15px;
+  color: white;
+}
+
+.bitcoin-news {
+  height: 100%;
+  width: 100%;
+  background-color: #182c61;
+}
+
+.bitcoin-news h3 {
+  font-size: 40px;
+  text-align: center;
+  color: white;
+  letter-spacing: 2px;
+  padding-top: 40px;
+}
+
+.bitcoin-main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.bitcoin-main-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.bitcoin-content1 {
+  padding: 50px;
+}
+
+.bitcoin-content1 img {
+  height: 600px;
+  width: 600px;
+}
+
+.bitcoin-content2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  height: 13rem;
+  width: 30rem;
+  color: white;
+  letter-spacing: 2px;
+}
+
+.bitcoin-content2-img img {
+  height: 120px;
+  width: 120px;
+  border-radius: 70px;
+}
+
+.bitcoin-icons {
+  display: flex;
+  padding-top: 20px;
+  gap: 30px;
+  align-items: center;
+}
+
+.bitcoin-icons i {
+  padding-right: 10px;
+}
+
+.footer-main {
+  height: 100%;
+  background: url(../cripto-gallery/gridscape-backgrounds-NF6LAQJ.jpg);
+  width: 100%;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+.footer {
+  /* height: 120vh; */
+  /* width: 100%; */
+  padding: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-direction: column;
+  background-color: #182b61d3;
+}
+.footer-container {
+  display: flex;
+  /* justify-content: space-around; */
+  align-items: center;
+  gap: 40px;
+}
+.footer-content1 {
+  /* padding: 0px 30px 0px 80px; */
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.footer-head h1 {
+  font-size: 20px;
+  font-family: "Bungee Inline", sans-serif;
+  color: gold;
+}
+.footer-icon ul {
+  padding-top: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-size: 23px;
+  color: white;
+  list-style-type: none;
+}
+.footer-icon ul li:hover {
+  color: #f879b6;
+  transition: 0.7s;
+}
+.footer-content2 ul {
+  width: 150px;
+  list-style-type: none;
+  font-size: 20px;
+}
+.footer-content2 ul li a {
+  text-decoration: none;
+  color: white;
+}
+.footer-content2 ul li a:hover {
+  color: #f879b6;
+  transition: 0.7s;
+}
+.footer-input {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  /* padding-bottom: 20px; */
+  color: white;
+}
+.input {
+  padding: 10px;
+  width: 13rem;
+  background: rgba(0, 0, 0, 0.438);
+  border: none;
+  color: white;
+  border-radius: 30px;
+}
+input:focus {
+  outline: 0;
+}
+::placeholder {
+  color: white;
+}
+.footer-input button {
+  padding: 10px;
+  width: 5rem;
+  border: none;
+  color: white;
+  font-size: 15px;
+  border-radius: 30px 0px;
+  background: linear-gradient(
+    90deg,
+    rgb(95, 70, 236) 0%,
+    rgb(224, 71, 255) 100%
+  );
+  /* background: linear-gradient(); */
+}
+.footer-input button:hover {
+  background: linear-gradient(
+    90deg,
+    rgb(224, 71, 255) 0%,
+    rgb(95, 70, 236) 100%
+  );
+  transition: 0.7s;
+}
+.footer-last {
+  color: white;
+  font-size: 15px;
+  padding-top: 50px;
+}
+.footer-last a {
+  text-decoration: none;
+  color: mediumaquamarine;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .header {
+    width: 100%;
+    padding: 15px;
+  }
+  .header-icon {
+    font-size: 35px;
+  }
+  .header-icon-head a {
+    font-size: 25px;
+  }
+  .lists ul {
+    display: none;
+  }
+  .nav-button {
+    display: block;
+  }
+  .header-button button {
+    display: none;
+  }
+
+  .Home-main {
+    flex-wrap: wrap;
+  }
+  .Home-content {
+    padding: 50px 0px;
+  }
+  .Home-content h1 {
+    font-size: 30px;
+    /* width: 20rem; */
+  }
+  .Home-buttons {
+    flex-wrap: wrap;
+  }
+  .support-main {
+    flex-wrap: wrap;
+  }
+
+  .support {
+    justify-content: left;
+    flex-wrap: wrap;
+    padding: 25px;
+  }
+  .icon {
+    padding: 0px 40px;
+  }
+  .support-text {
+    width: 100%;
+  }
+  .ICO-main-content {
+    flex-direction: column;
+  }
+  .why-crypto-cards {
+    flex-wrap: wrap;
+  }
+  .why-crypto-card1 img {
+    padding: 0px 100px;
+  }
+  .timeline-container {
+    flex-direction: column;
+    padding: 0px;
+  }
+  .timeline-content {
+    padding: 0px;
+  }
+  .timeline-head-text2 p {
+    width: 13rem;
+    font-size: 17px;
+  }
+  .timeline-code {
+    padding: 60px 0px 0px 30px;
+  }
+  .timeline-container1 {
+    padding: 0px;
+    flex-direction: column;
+  }
+  .road-code-icon1 {
+    display: none;
+  }
+  .road-code-icon2 {
+    display: none;
+  }
+  .do {
+    display: none;
+  }
+  .clients-content1 h3 {
+    width: 100%;
+  }
+  .clients-content1 p {
+    width: 100%;
+  }
+  .clients-content1 {
+    padding-bottom: 40px;
+  }
+  .clients-container {
+    flex-wrap: wrap;
+  }
+  .clients-content2 {
+    border: none;
+    padding: 30px 28px;
+  }
+  .bitcoin-main {
+    flex-wrap: wrap;
+  }
+  .bitcoin-content1 img {
+    width: 100%;
+    height: 100%;
+  }
+  .timeline-code-dash {
+    display: none;
+  }
+  .bitcoin-content2-img img {
+    display: none;
+  }
+  .ICO-img img {
+    height: 100%;
+    width: 100%;
+  }
+  .Home-img img {
+    height: 100%;
+    width: 100%;
+    padding-top: 20px;
+  }
+  .why-crypto-card1 {
+    flex-wrap: wrap;
+    padding: 20px 0px;
+  }
+  .ICO-text-p {
+    text-align: justify;
+    width: 17rem;
+  }
+  .bitcoin-content2 {
+    width: 20rem;
+  }
+  .ICO-text-num {
+    display: none;
+  }
+  .join-buy-content h5 {
+    font-size: 20px;
+    padding-bottom: 20px;
+  }
+  .join-buy-content {
+    line-height: 50px;
+    font-size: 20px;
+  }
+  .join-buy-content button {
+    width: 100%;
+  }
+  .footer-container {
+    flex-direction: column;
+    gap: 60px;
+  }
+  .inputs-main2 input {
+    width: 80%;
+  }
+  .footer-container {
+    flex-direction: column;
+  }
+  .footer-content1 {
+    padding: 0px 30px 0px 0px;
+  }
+  .footer-last {
+    width: 13rem;
+    text-align: center;
+    padding: 20px;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .header {
+    width: 100%;
+    padding: 15px;
+  }
+  .header-icon {
+    font-size: 35px;
+  }
+  .header-icon-head {
+    font-size: 30px;
+  }
+  .lists ul {
+    display: none;
+  }
+  .nav-button {
+    display: block;
+  }
+  .header-button button {
+    display: none;
+  }
+  .Home-main {
+    flex-wrap: wrap;
+  }
+  .Home-content {
+    padding: 50px 0px;
+  }
+  .Home-content h1 {
+    font-size: 30px;
+    /* width: 20rem; */
+  }
+  .Home-buttons {
+    flex-wrap: wrap;
+  }
+  .support-main {
+    flex-wrap: wrap;
+  }
+
+  .support {
+    justify-content: left;
+    flex-wrap: wrap;
+    padding: 25px;
+  }
+  .clients-content2 {
+    border: none;
+    padding: 30px 28px;
+  }
+  .support-text {
+    width: 100%;
+  }
+  .ICO-main-content {
+    flex-wrap: wrap;
+  }
+  .why-crypto-cards {
+    flex-wrap: wrap;
+  }
+  .timeline-container {
+    flex-wrap: wrap;
+    padding: 0px;
+  }
+  .timeline-content {
+    padding: 0px;
+  }
+  .timeline-head-text2 p {
+    width: 13rem;
+    font-size: 17px;
+  }
+  .timeline-code {
+    padding: 60px 0px 0px 30px;
+  }
+  .timeline-container1 {
+    padding: 0px;
+    flex-wrap: wrap;
+  }
+  .road-code-icon1 {
+    display: none;
+  }
+  .road-code-icon2 {
+    display: none;
+  }
+  .do {
+    display: none;
+  }
+  .clients-content1 h3 {
+    width: 100%;
+  }
+  .clients-content1 p {
+    width: 100%;
+  }
+  .clients-content1 {
+    padding-bottom: 40px;
+  }
+  .clients-container {
+    flex-wrap: wrap;
+  }
+
+  .bitcoin-main {
+    flex-wrap: wrap;
+  }
+  .bitcoin-content1 img {
+    width: 100%;
+    height: 100%;
+  }
+  .bitcoin-content2-img img {
+    display: none;
+  }
+  .ICO-img img {
+    height: 100%;
+    width: 100%;
+  }
+  .timeline-code-dash {
+    display: none;
+  }
+  .Home-img img {
+    height: 100%;
+    width: 100%;
+    padding-top: 20px;
+  }
+  .why-crypto-card1 {
+    flex-wrap: wrap;
+    padding: 20px 0px;
+  }
+  .ICO-text-p {
+    text-align: justify;
+    width: 17rem;
+  }
+  .bitcoin-content2 {
+    width: 20rem;
+  }
+  .ICO-text-num {
+    display: none;
+  }
+  .join-buy-content h5 {
+    font-size: 20px;
+    padding-bottom: 20px;
+  }
+  .join-buy-content {
+    line-height: 50px;
+    font-size: 20px;
+  }
+  .join-buy-content button {
+    width: 70%;
+  }
+  .footer-container {
+    flex-wrap: wrap;
+  }
+  .inputs-main2 input {
+    width: 80%;
+  }
+  .footer-container {
+    flex-wrap: wrap;
+    gap: 60px;
+  }
+  .footer-content1 {
+    padding: 0px 30px 0px 0px;
+  }
+  .footer-last {
+    width: 13rem;
+    text-align: center;
+    padding: 20px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .header {
+    width: 100%;
+    padding: 15px;
+  }
+  .header-icon {
+    font-size: 35px;
+  }
+  .header-icon-head a {
+    font-size: 25px;
+  }
+  .nav-button {
+    display: none;
+  }
+  .Home-main {
+    padding: 85px;
+  }
+  .Home-content {
+    padding: 50px 0px;
+  }
+  .support {
+    justify-content: left;
+    flex-wrap: wrap;
+    padding: 25px;
+  }
+  .clients-content2 {
+    border: none;
+    padding: 30px 28px;
+  }
+  .support-text {
+    width: 100%;
+  }
+  .bitcoin-content1 img {
+    width: 100%;
+    height: 100%;
+  }
+  .Home-img img {
+    height: 100%;
+    width: 100%;
+    padding-top: 20px;
+  }
+}

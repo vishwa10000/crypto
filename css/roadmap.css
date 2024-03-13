@@ -1,0 +1,908 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+    font-family: 'Alegreya Sans SC', sans-serif;
+}
+body::-webkit-scrollbar{
+    display: none;
+  }
+.header{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    backdrop-filter: blur(7px) saturate(200%);
+    -webkit-backdrop-filter: blur(7px) saturate(200%);
+    background-color: rgba(17, 25, 40, 0.2);
+    padding: 20px;
+    z-index: 10;
+}
+.header-icon-head a{
+    font-family: 'Bungee Inline', sans-serif;
+    text-decoration: none;
+    color: gold;
+    font-size: 30px;
+}
+.header-icon-head a:hover{
+    color: lightskyblue;
+    transition: all 0.7s;
+}
+.lists ul{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    gap: 20px;
+}
+.lists ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    transition: all 0.3s;
+    padding: 20px 0px;
+}
+.lists ul li a:hover{
+    color: gold;
+    transition: all 0.3s;
+}
+.lists-list{
+    display: none;
+    transition: all 0.3s;
+}
+.lists-list ul li a:hover{
+    transition: all 0.3s;
+    color: gold;
+}
+.lists ul li:hover .lists-list{
+    display: block;
+    position: absolute;
+    top: 40px;
+    backdrop-filter: blur(7px) saturate(200%);
+    -webkit-backdrop-filter: blur(7px) saturate(200%);
+    background-color: rgba(17, 25, 40, 0.2);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+.lists ul li:hover .lists-list ul{
+    display: block;
+    margin: 10px;
+}
+.lists ul li:hover .lists-list ul li{
+    width: 150px;
+    padding: 10px;
+}
+.mob-lists{
+    position: fixed;
+    top: 75px;
+    backdrop-filter: blur(7px) saturate(200%);
+    -webkit-backdrop-filter: blur(7px) saturate(200%);
+    background-color: rgba(17, 25, 40, 0.2);
+    z-index: 1;
+    overflow-x: hidden;
+    width: 0%;
+    height: 100%;
+    transition: 0.3s;
+}
+.mob-lists ul{
+    position: relative;
+    list-style-type: none;
+    padding: 15px 0px 0px 0px;
+}
+
+.mob-lists ul li{
+    padding: 18px;
+}
+
+.mob-lists ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    transition: all 0.3s;
+    padding: 20px 0px;
+}
+
+.mob-lists ul li a:hover{
+    color: gold;
+    transition: all 0.3s;
+}
+
+.mob-lists-list{
+    display: none;
+    transition: all 0.3s;
+}
+
+.mob-lists-list ul li a:hover{
+    transition: all 0.3s;
+    color: gold;
+}
+
+.mob-lists ul li:hover .mob-lists-list{
+    display: block;
+    position: absolute;
+    top: 270px;
+    left: 120px;
+    backdrop-filter: blur(7px) saturate(200%);
+    -webkit-backdrop-filter: blur(7px) saturate(200%);
+    background-color: rgba(17, 25, 40, 0.2);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.mob-lists ul li:hover .mob-lists-list ul{
+    display: block;
+    /* margin: 10px; */
+}
+
+.mob-lists ul li:hover .mob-lists-list ul li{
+    width: 150px;
+    padding: 10px;
+}
+.header-button button{
+    padding: 15px;
+    width: 10rem;
+    border: none;
+    background: rgb(236,80,70);
+    background: linear-gradient(90deg, rgb(95, 70, 236) 0%, rgb(224, 71, 255) 100%);
+    border-radius: 30px;
+    font-size: 15px;
+    color: white;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.header-button button:hover{
+    transition: all 0.3s;
+    background: rgb(236,80,70);
+    background: linear-gradient(90deg, rgb(224, 71, 255) 0%, rgb(95, 70, 236) 100%);
+}
+.nav-button{
+    display: none;
+}
+.nav-button button{
+    background: none;
+    font-size: 25px;
+    border: none;
+    color: white;
+    padding: 15px;
+}
+.nav-button button:hover{
+    color: gold;
+    transition: 0.7s;
+}
+.Contact-main{
+    height: 100%;
+    width: 100%;
+    background: url(../cripto-gallery/blog-card7\ \(1\)-min.jpg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.Contact-content1{
+    height: 70vh;
+    width: 100%;
+    background-color: rgba(54, 54, 54, 0.61);
+    /* background-color: rgba(0, 0, 0, 0.726); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+.Contact-content1 p{
+    padding-top: 10px;
+    width: 40rem;
+    font-size: 20px;
+}
+.roadmap{
+    height: 100%;
+    width: 100%;
+    background-color: #182C61;
+}
+.roadmap-main{
+    height: 100%;
+    padding: 50px;
+}
+.roadmap-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+}
+.roadmap-container-text1{
+    font-size: 30px;
+    color: white;
+    padding: 30px 0px;
+}
+.roadmap-container-text2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30px;
+}
+.roadmap-container-text2 button{
+    font-size: 30px;
+    padding: 10px;
+    width: 8rem;
+    border: 1px solid white;
+    color: white;
+    background: none;
+}
+.roadmap-container-text2 button:hover{
+    border-radius: 40px 0px;
+    transition: 0.3s;
+    background-color: teal;
+    color: black;
+}
+.roadmap-main2{
+    display: flex;
+    align-items: center;
+    display: none;
+    
+}
+.roadmap-main3{
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    /* display: none; */
+}
+.roadmap-container2{
+    /* position: relative; */
+    height: 23rem;
+    width: 20rem;
+    /* background-color: rgba(165, 42, 42, 0.822); */
+    padding: 50px 0px;
+    /* overflow: hidden; */
+}
+.roadmap-container2 p{
+    font-size: 25px;
+    color: #74aeda;
+    padding: 20px 0px;
+}
+.road-dash{
+    width: 19rem;
+    border: .8px dashed wheat;
+}
+.road-dash2{
+    width: 22rem;
+    border: .8px dashed wheat;
+}
+.roadmap-content{
+    padding: 30px;
+}
+.road-code{
+    position: relative;
+}
+.road-code-icon{
+    position: absolute;
+    /* left: -10px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15px;
+    width: 15px;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: palegreen;
+}
+.road-code-dash{
+    position: absolute;
+    top: 40px;
+    left: 10px;
+    height: 250px;
+    border-left: 2px dotted wheat;
+}
+.road-code-dash1{
+    position: absolute;
+    top: 40px;
+    left: 10px;
+    height: 280px;
+    border-left: 2px dotted wheat;
+}
+.road-code2{
+    padding-top: 35px;
+    padding-left: 50px;
+}
+.road-code2 ul{
+   list-style-type: none;
+}
+.road-code2 p{
+    color: darkgray;
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+.timeline{
+    height: 100%;
+    width: 100%;
+    background-color: #182C61;
+}
+.timeline-main{
+    height: 100%;
+    padding: 60px;
+    /* text-align: center; */
+}
+.timeline-main p{
+    text-align: center;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.678);
+    padding: 20px 0px;
+}
+.timeline-head{
+    font-size: 35px;
+    color: white;
+    text-align: center;
+}
+.road-code-icon1{
+    position: absolute;
+    /* left: -10px; */
+    top: 21.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15px;
+    width: 15px;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: palegreen;
+}
+.timeline-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 40px;
+    padding-left: 150px;
+}
+.timeline-content{
+    height: 20rem;
+    width: 20rem;
+    padding: 30px;
+    /* background-color: blueviolet; */
+}
+.timeline-code-dash{
+    position: absolute;
+    top: 40px;
+    left: 12px;
+    height: 250px;
+    border-left: 2px dotted wheat;
+}
+.timeline-code{
+    padding-left: 30px;
+    padding-top: 100px;
+}
+.timeline-head-text{
+    /* padding-left: 30px; */
+    font-size: 25px;
+    color: white;
+}
+.timeline-head-text1 p{
+    text-align: left;
+    font-size: 18px;
+    color: #74aeda;
+}
+.timeline-head-text2 p{
+    font-size: 15px;
+    text-align: left;
+    color: white;
+}
+.road-code-icon2{
+    position: absolute;
+    /* left: -10px; */
+    top: -43px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15px;
+    width: 15px;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: palegreen;
+}
+.timeline-container1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* padding-top: 40px; */
+    padding-right: 110px;
+}
+.join-buy{
+    width: 100%;
+    height: 100%;
+    background: url(../cripto-gallery/blog-card6\ \(1\)-min.jpg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    /* background-color: indigo; */
+}
+.join-buy-main{
+    height: 100%;
+    background-color: rgba(54, 54, 54, 0.61);
+    /* background-color: rgba(0, 0, 0, 0.726); */
+    padding: 60px;
+}
+.join-buy-content{
+    text-align: center;
+    font-size: 30px;
+    line-height: 80px;
+    color: white;
+}
+.join-buy-content h5{
+    letter-spacing: 5px;
+}
+.join-buy-content button{
+    padding: 10px;
+    width: 20rem;
+    font-size: 20px;
+    border: none;
+    background: linear-gradient(90deg, rgb(95, 70, 236) 0%, rgb(224, 71, 255) 100%);
+    color: white;
+    border-radius: 30px;
+}
+.join-buy-content button:hover{
+    background: linear-gradient(90deg, rgb(224, 71, 255) 0%, rgb(95, 70, 236) 100%);  
+    transition: 0.7s;
+}
+.bitcoin-news{
+    height: 100%;
+    width: 100%;
+    background-color: #182C61;
+}
+.bitcoin-news h3{
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    letter-spacing: 2px;
+    padding: 40px 0px;
+}
+.bitcoin-main{
+    height: 100%;
+    /* width: 100%; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* padding: 20px; */
+
+}
+/* .bitcoin-main-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+} */
+.bitcoin-content1{
+    padding: 50px;
+}
+.bitcoin-content1 img{
+    height: 500px;
+    width: 500px;
+}
+.bitcoin-content2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    height: 13rem;
+    width: 30rem;
+    color: white;
+    letter-spacing: 2px;
+}
+.bitcoin-content2-img img{
+    height: 120px;
+    width: 120px;
+    border-radius: 70px;
+}
+.bitcoin-icons{
+    display: flex;
+    padding-top: 20px;
+    gap: 30px;
+    align-items: center;
+}
+.bitcoin-icons i{
+    padding-right: 10px;
+}
+.footer-main{
+    height: 100%;
+    background: url(../cripto-gallery/gridscape-backgrounds-NF6LAQJ.jpg);
+    width: 100%;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+.footer{
+    /* height: 120vh; */
+    /* width: 100%; */
+    padding: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-direction: column;
+    background-color: #182b61d3;
+}
+.footer-container{
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    gap: 40px;
+}
+.footer-content1{
+    /* padding: 0px 30px 0px 80px; */
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.footer-head h1{
+    font-size: 20px;
+    font-family: 'Bungee Inline', sans-serif;
+    color: gold;
+}
+.footer-icon ul{
+    padding-top: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 23px;
+    color: white;
+    list-style-type: none;
+}
+.footer-icon ul li:hover{
+    color: #f879b6;
+    transition: 0.7s;
+}
+.footer-content2 ul{
+    width: 150px;
+    list-style-type: none;
+    font-size: 20px;
+}
+.footer-content2 ul li a{
+    text-decoration: none;
+    color: white;
+}
+.footer-content2 ul li a:hover{
+    color: #f879b6;
+    transition: 0.7s;
+}
+.footer-input{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    /* padding-bottom: 20px; */
+    color: white;
+}
+.input{
+    padding: 10px;
+    width: 13rem;
+    background: rgba(0, 0, 0, 0.438);
+    border: none;
+    color: white;
+    border-radius: 30px;
+
+}
+input:focus{
+    outline: 0;
+}
+::placeholder{
+    color: white;
+}
+.footer-input button{
+    padding: 10px;
+    width: 5rem;
+    border: none;
+    color: white;
+    font-size: 15px;
+    border-radius: 30px 0px;
+    background: linear-gradient(90deg, rgb(95, 70, 236) 0%, rgb(224, 71, 255) 100%);
+    /* background: linear-gradient(); */
+}
+.footer-input button:hover{
+    background: linear-gradient(90deg, rgb(224, 71, 255) 0%, rgb(95, 70, 236) 100%);
+    transition: 0.7s;
+
+}
+.footer-last{
+    color: white;
+    font-size: 15px;
+    padding-top: 50px;
+}
+.footer-last a{
+    text-decoration: none;
+    color: mediumaquamarine;
+}
+@media (min-width:320px) and (max-width:480px) {
+    .header{
+        width: 100%;
+        padding: 15px;
+    }
+    .header-icon{
+        font-size: 35px;
+    }
+    .header-icon-head a{
+        font-size: 25px;
+    }
+    .lists ul {
+        display: none;
+    }
+    .nav-button{
+        display: block;
+    }
+    .Contact-content1 p {
+        display: none;
+    }
+    .header-button button {
+        display: none;
+    }
+    .roadmap-main2{
+        flex-direction: column;
+    }
+    .road-dash{
+        border: none;
+    }
+    .road-dash2{
+        border: none;
+    }
+    .timeline-container{
+        flex-direction: column;
+        padding: 0px;
+    }
+    .timeline-content{
+        padding: 0px;
+    }
+    .roadmap-container2 p{
+        padding: 15px 14px;
+    }
+    .roadmap-content{
+        padding: 0px 30px 30px 30px;
+    }
+    .roadmap-container2 {
+        padding: 40px 0px;
+    }
+    .timeline-head-text2 p{
+        width: 13rem;
+        font-size: 17px;
+    }
+    .timeline-code{
+        padding: 60px 0px 0px 30px;
+    }
+    .bitcoin-content1{
+        padding: 0px;
+    }
+    .road-code-icon1{
+        display: none;
+    }
+    .bitcoin-content1{
+        padding: 20px 50px;
+    }
+    .bitcoin-content1 img{
+        height: 100%;
+        width: 100%;
+    }
+    .bitcoin-content2{
+        font-size: 15px;
+        width: 18rem;
+        flex-direction: column;
+    }
+    .roadmap-container-text2{
+        flex-wrap: wrap;
+    }
+    .bitcoin-content2-img img {
+        display: none;
+    }
+    .timeline-container1{
+        padding: 0px;
+        flex-direction: column;
+    }
+    .road-code-icon2{
+        display: none;
+    }
+    .do{
+        display: none;
+    }
+    .bitcoin-main{
+        flex-direction: column;
+    }
+    .join-buy-content h5{
+        font-size: 24px;
+        line-height: 35px;
+        padding-bottom: 20px;
+    }
+    .join-buy-content h2{
+        font-size: 27px;
+        line-height: 40px;
+    }
+    .join-buy-content button {
+        width: 100%;
+    }
+    .footer-container {
+        flex-direction: column;
+        gap: 60px;
+    }
+    .inputs-main2 input{
+        width: 80%;
+    }
+    .footer-container{
+        flex-direction: column;
+    }
+    .footer-content1{
+        padding: 0px 30px 0px 0px;
+    }
+    .footer-last{
+        width: 13rem;
+        text-align: center;
+        padding: 20px;
+    }
+}
+@media (min-width:481px) and (max-width:768px) {
+    .header{
+        width: 100%;
+        padding: 15px;
+    }
+    .header-icon{
+        font-size: 35px;
+    }
+    .header-icon-head a{
+        font-size: 25px;
+    }
+    .lists ul {
+        display: none;
+    }
+    .nav-button{
+        display: block;
+    }
+    .Contact-content1 p {
+        display: none;
+    }
+    .header-button button {
+        display: none;
+    }
+    .roadmap-main2{
+        flex-wrap: wrap;
+    }
+    .road-dash{
+        border: none;
+    }
+    .road-dash2{
+        border: none;
+    }
+    .timeline-container{
+        flex-wrap: wrap;
+        padding: 0px;
+    }
+    .timeline-content{
+        padding: 0px;
+    }
+    .roadmap-container2 p{
+        padding: 15px 14px;
+    }
+    .roadmap-content{
+        padding: 0px 30px 30px 30px;
+    }
+    .roadmap-container2 {
+        padding: 40px 0px;
+    }
+    .bitcoin-content1{
+        padding: 20px 50px;
+    }
+    .bitcoin-content1 img{
+        height: 100%;
+        width: 100%;
+    }
+    .timeline-head-text2 p{
+        width: 13rem;
+        font-size: 17px;
+    }
+    .timeline-code{
+        padding: 60px 0px 0px 30px;
+    }
+    .bitcoin-content1{
+        padding: 0px;
+    }
+    .bitcoin-content1 img{
+        width: 100%;
+        height: 100%;
+    }
+    .bitcoin-content2{
+        font-size: 15px;
+        width: 18rem;
+        flex-direction: column;
+    }
+    .roadmap-container-text2{
+        flex-wrap: wrap;
+    }
+    .bitcoin-content2-img img {
+        display: none;
+    }
+    .timeline-container1{
+        padding: 0px;
+        flex-wrap: wrap;
+    }
+    .road-code-icon2{
+        display: none;
+    }
+    .do{
+        display: none;
+    }
+    .bitcoin-main{
+        flex-wrap: wrap;
+    }
+    .join-buy-content h5{
+        font-size: 24px;
+        line-height: 35px;
+        padding-bottom: 20px;
+    }
+    .join-buy-content h2{
+        font-size: 27px;
+        line-height: 40px;
+    }
+    .join-buy-content button {
+        width: 100%;
+    }
+    .footer-container {
+        flex-direction: column;
+        gap: 60px;
+    }
+    .inputs-main2 input{
+        width: 80%;
+    }
+    .footer-content1{
+        padding: 0px 30px 0px 0px;
+    }
+    .footer-last{
+        width: 13rem;
+        text-align: center;
+        padding: 20px;
+    }
+}
+
+@media (min-width:769px) and (max-width:1024px) {
+    .header{
+        width: 100%;
+        padding: 15px;
+    }
+    .header-icon{
+        font-size: 35px;
+    }
+    .header-icon-head a{
+        font-size: 25px;
+    }
+    .nav-button{
+        display: none;
+    }
+    .Home-main{
+        padding: 85px;
+    }
+    .Home-content{
+        padding: 50px 0px;
+    }
+    .support {
+        justify-content: left;
+        flex-wrap: wrap;
+        padding: 25px;
+    }
+    .clients-content2{
+        border: none;
+        padding: 30px 28px;
+    }
+    .roadmap-content {
+        padding: 25px;
+        width: 16rem;
+    }
+    .support-text {
+        width: 100%;
+    }
+    .bitcoin-content1 img{
+        width: 100%;
+        height: 100%;
+    }
+    .Home-img img{
+        height: 100%;
+        width: 100%;
+        padding-top: 20px;
+    }
+}

@@ -1,0 +1,653 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+    font-family: 'Alegreya Sans SC', sans-serif;
+}
+body::-webkit-scrollbar{
+    display: none;
+  }
+.header{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    backdrop-filter: blur(7px) saturate(200%);
+    -webkit-backdrop-filter: blur(7px) saturate(200%);
+    background-color: rgba(17, 25, 40, 0.2);
+    padding: 20px;
+    z-index: 10;
+}
+.header-icon-head a{
+    font-family: 'Bungee Inline', sans-serif;
+    text-decoration: none;
+    color: gold;
+    font-size: 30px;
+}
+.header-icon-head a:hover{
+    color: lightskyblue;
+    transition: all 0.7s;
+}
+.lists ul{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    gap: 20px;
+}
+.lists ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    transition: all 0.3s;
+    padding: 20px 0px;
+}
+.lists ul li a:hover{
+    color: gold;
+    transition: all 0.3s;
+}
+.lists-list{
+    display: none;
+    transition: all 0.3s;
+}
+.lists-list ul li a:hover{
+    transition: all 0.3s;
+    color: gold;
+}
+.lists ul li:hover .lists-list{
+    display: block;
+    position: absolute;
+    top: 40px;
+    backdrop-filter: blur(7px) saturate(200%);
+    -webkit-backdrop-filter: blur(7px) saturate(200%);
+    background-color: rgba(17, 25, 40, 0.2);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+.lists ul li:hover .lists-list ul{
+    display: block;
+    margin: 10px;
+}
+.lists ul li:hover .lists-list ul li{
+    width: 150px;
+    padding: 10px;
+}
+.mob-lists{
+    position: fixed;
+    top: 75px;
+    backdrop-filter: blur(7px) saturate(200%);
+    -webkit-backdrop-filter: blur(7px) saturate(200%);
+    background-color: rgba(17, 25, 40, 0.2);
+    z-index: 1;
+    overflow-x: hidden;
+    width: 0%;
+    height: 100%;
+    transition: 0.3s;
+}
+.mob-lists ul{
+    position: relative;
+    list-style-type: none;
+    padding: 15px 0px 0px 0px;
+}
+
+.mob-lists ul li{
+    padding: 18px;
+}
+
+.mob-lists ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    transition: all 0.3s;
+    padding: 20px 0px;
+}
+
+.mob-lists ul li a:hover{
+    color: gold;
+    transition: all 0.3s;
+}
+
+.mob-lists-list{
+    display: none;
+    transition: all 0.3s;
+}
+
+.mob-lists-list ul li a:hover{
+    transition: all 0.3s;
+    color: gold;
+}
+
+.mob-lists ul li:hover .mob-lists-list{
+    display: block;
+    position: absolute;
+    top: 270px;
+    left: 120px;
+    backdrop-filter: blur(7px) saturate(200%);
+    -webkit-backdrop-filter: blur(7px) saturate(200%);
+    background-color: rgba(17, 25, 40, 0.2);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.mob-lists ul li:hover .mob-lists-list ul{
+    display: block;
+    /* margin: 10px; */
+}
+
+.mob-lists ul li:hover .mob-lists-list ul li{
+    width: 150px;
+    padding: 10px;
+}
+.header-button button{
+    padding: 15px;
+    width: 10rem;
+    border: none;
+    background: rgb(236,80,70);
+    background: linear-gradient(90deg, rgb(95, 70, 236) 0%, rgb(224, 71, 255) 100%);
+    border-radius: 30px;
+    font-size: 15px;
+    color: white;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.header-button button:hover{
+    transition: all 0.3s;
+    background: rgb(236,80,70);
+    background: linear-gradient(90deg, rgb(224, 71, 255) 0%, rgb(95, 70, 236) 100%);
+}
+.nav-button{
+    display: none;
+}
+.nav-button button{
+    background: none;
+    font-size: 25px;
+    border: none;
+    color: white;
+    padding: 15px;
+}
+.nav-button button:hover{
+    color: gold;
+    transition: 0.7s;
+}
+.Contact-main{
+    height: 100%;
+    width: 100%;
+    background: url(../cripto-gallery/blog-card7\ \(1\)-min.jpg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.Contact-content1{
+    height: 70vh;
+    width: 100%;
+    background-color: rgba(54, 54, 54, 0.61);
+    /* background-color: rgba(0, 0, 0, 0.726); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+.Contact-content1 p{
+    padding-top: 10px;
+    width: 40rem;
+    font-size: 20px;
+}
+.pricing{
+    height: 100%;
+    width: 100%;
+    background-color: #182C61;
+}
+.pricing-main{
+    padding: 80px 50px;
+    height: 100%;
+}
+.pricing-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+.pricing-cards{
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.76);
+}
+.pricing-content1{
+    font-size: 30px;
+    color: aqua;
+    padding: 20px 0px;    
+}
+.pricing-content2{
+    font-size: 30px;
+    color: white;
+}
+.pricing-content2-text{
+    font-size: 50px;
+}
+.pricing-content3{
+    font-size: 18px;
+    color: white;
+    padding: 10px 0px;    
+}
+.pricing-content4{
+    font-size: 25px;
+    color: white;
+    padding: 20px 0px;    
+}
+.pricing-content5 button{
+    padding: 15px;
+    width: 10rem;
+    border-radius: 50px;
+    background-color: brown;
+    border: none;
+    color: white;
+    font-size: 20px;
+}
+.pricing-content5 button:hover{
+    background-color: rgb(247, 159, 247);
+    color: black;
+    transition: 0.7s;
+}
+.join-buy{
+    width: 100%;
+    height: 100%;
+    background: url(../cripto-gallery/blog-card4-min.jpg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.join-buy-main{
+    background-color: rgba(54, 54, 54, 0.61);
+    /* background-color: rgba(0, 0, 0, 0.671); */
+    height: 100%;
+    padding: 60px;
+}
+.join-buy-content{
+    text-align: center;
+    line-height: 80px;
+    color: white;
+    font-size: 20px;
+    color: palegreen;
+}
+.join-buy-content h5{
+    font-size: 50px;
+    letter-spacing: 5px;
+    color: white;
+}
+.join-buy-content button{
+    padding: 10px;
+    width: 20rem;
+    font-size: 20px;
+    border: none;
+    background: linear-gradient(90deg, rgb(95, 70, 236) 0%, rgb(224, 71, 255) 100%);
+    color: white;
+    border-radius: 30px;
+}
+.join-buy-content button:hover{
+    background: linear-gradient(90deg, rgb(224, 71, 255) 0%, rgb(95, 70, 236) 100%);  
+    transition: 0.7s;
+}
+.contact-help{
+    height: 100%;
+    width: 100%;
+    background-color: #182C61;
+}
+.help-main{
+    height: 100%;
+    padding: 50px;
+    font-size: 25px;
+}
+.help-main h1{
+    padding: 30px 0px;
+    letter-spacing: 8px;
+    text-align: center;
+    color: white;
+
+}
+.support-main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    padding: 50px 0px;
+}
+.support{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.support-text{
+    width: 19rem;
+    color: white;
+}
+.support-text p{
+    padding-bottom: 10px;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.637);
+}
+.support-text h5{
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+.support-text a{
+    color: white;
+    padding-bottom: 10px;
+    text-decoration: none;
+    font-size: 20px;
+}
+.footer-main{
+    height: 100%;
+    background: url(../cripto-gallery/gridscape-backgrounds-NF6LAQJ.jpg);
+    width: 100%;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+.footer{
+    /* height: 120vh; */
+    /* width: 100%; */
+    padding: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-direction: column;
+    background-color: #182b61d3;
+}
+.footer-container{
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    gap: 40px;
+}
+.footer-content1{
+    /* padding: 0px 30px 0px 80px; */
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.footer-head h1{
+    font-size: 20px;
+    font-family: 'Bungee Inline', sans-serif;
+    color: gold;
+}
+.footer-icon ul{
+    padding-top: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 23px;
+    color: white;
+    list-style-type: none;
+}
+.footer-icon ul li:hover{
+    color: #f879b6;
+    transition: 0.7s;
+}
+.footer-content2 ul{
+    width: 150px;
+    list-style-type: none;
+    font-size: 20px;
+}
+.footer-content2 ul li a{
+    text-decoration: none;
+    color: white;
+}
+.footer-content2 ul li a:hover{
+    color: #f879b6;
+    transition: 0.7s;
+}
+.footer-input{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    /* padding-bottom: 20px; */
+    color: white;
+}
+.input{
+    padding: 10px;
+    width: 13rem;
+    background: rgba(0, 0, 0, 0.438);
+    border: none;
+    color: white;
+    border-radius: 30px;
+
+}
+input:focus{
+    outline: 0;
+}
+::placeholder{
+    color: white;
+}
+.footer-input button{
+    padding: 10px;
+    width: 5rem;
+    border: none;
+    color: white;
+    font-size: 15px;
+    border-radius: 30px 0px;
+    background: linear-gradient(90deg, rgb(95, 70, 236) 0%, rgb(224, 71, 255) 100%);
+    /* background: linear-gradient(); */
+}
+.footer-input button:hover{
+    background: linear-gradient(90deg, rgb(224, 71, 255) 0%, rgb(95, 70, 236) 100%);
+    transition: 0.7s;
+
+}
+.footer-last{
+    color: white;
+    font-size: 15px;
+    padding-top: 50px;
+}
+.footer-last a{
+    text-decoration: none;
+    color: mediumaquamarine;
+}
+@media (min-width:320px) and (max-width:480px) {
+    .header{
+        width: 100%;
+        padding: 15px;
+    }
+    .header-icon{
+        font-size: 35px;
+    }
+    .header-icon-head a{
+        font-size: 25px;
+    }
+    .lists ul {
+        display: none;
+    }
+    .nav-button{
+        display: block;
+    }
+    .Contact-content1 p {
+        display: none;
+    }
+    .header-button button {
+        display: none;
+    }
+    .pricing-cards {
+        height: 100%;
+        width: 90%;
+    }
+    .pricing-content1{
+        font-size: 28px;
+    }
+    .join-buy-content h5{
+        font-size: 24px;
+        line-height: 35px;
+        padding-bottom: 20px;
+    }
+    .join-buy-content h2{
+        font-size: 27px;
+        line-height: 40px;
+    }
+    .join-buy-content button {
+        width: 100%;
+    }
+    .icon{
+        padding: 0px 40px;
+    }
+    .help-main h1{
+        width: 100%;
+        font-size: 22px;
+    }
+    .pricing-container{
+        flex-wrap: wrap ;
+    }
+    .support-main{
+        flex-wrap: wrap;
+    }
+    .support{
+        justify-content: left;
+        flex-wrap: wrap;
+        padding: 25px;
+    }
+    .support-text{
+        width: 100%;
+    }
+    .footer-container {
+        flex-direction: column;
+        gap: 60px;
+    }
+    .inputs-main2 input{
+        width: 80%;
+    }
+    .footer-container{
+        flex-direction: column;
+    }
+    .footer-content1{
+        padding: 0px 30px 0px 0px;
+    }
+    .footer-last{
+        width: 13rem;
+        text-align: center;
+        padding: 20px;
+    }
+}
+@media (min-width:481px) and (max-width:768px) {
+    .header{
+        width: 100%;
+        padding: 15px;
+    }
+    .header-icon{
+        font-size: 35px;
+    }
+    .header-icon-head a{
+        font-size: 25px;
+    }
+    .lists ul {
+        display: none;
+    }
+    .nav-button{
+        display: block;
+    }
+    .Contact-content1 p {
+        display: none;
+    }
+    .icon{
+        padding: 0px 40px;
+    }
+    .header-button button {
+        display: none;
+    }
+    .pricing-cards {
+        height: 100%;
+        width: 90%;
+    }
+    .pricing-content1{
+        font-size: 28px;
+    }
+    .join-buy-content h5{
+        font-size: 24px;
+        line-height: 35px;
+        padding-bottom: 20px;
+    }
+    .join-buy-content h2{
+        font-size: 27px;
+        line-height: 40px;
+    }
+    .join-buy-content button {
+        width: 70%;
+    }
+    .help-main h1{
+        width: 100%;
+        font-size: 22px;
+    }
+    .pricing-container{
+        flex-wrap: wrap ;
+    }
+    .support-main{
+        flex-wrap: wrap;
+    }
+    .support{
+        /* flex-wrap: ; */
+        padding: 25px;
+    }
+    .support-text{
+        width: 100%;
+    }
+    .footer-container {
+        flex-wrap: wrap;
+        gap: 60px;
+    }
+    .inputs-main2 input{
+        width: 80%;
+    }
+    .footer-container{
+        flex-wrap: wrap;
+    }
+    .footer-content1{
+        padding: 0px 30px 0px 0px;
+    }
+    .footer-last{
+        width: 13rem;
+        text-align: center;
+        padding: 20px;
+    }
+}
+
+@media (min-width:769px) and (max-width:1024px) {
+    .header{
+        width: 100%;
+        padding: 15px;
+    }
+    .header-icon{
+        font-size: 35px;
+    }
+    .header-icon-head a{
+        font-size: 25px;
+    }
+    .nav-button{
+        display: none;
+    }
+    .Contact-content1 p {
+        display: none;
+    }
+    .help-main h1{
+        width: 100%;
+        font-size: 22px;
+    }
+
+    .support {
+        justify-content: left;
+        flex-wrap: wrap;
+        padding: 25px;
+    }
+    .support-text {
+        width: 100%;
+    }
+}
